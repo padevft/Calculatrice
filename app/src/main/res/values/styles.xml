@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Toolbar" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="StyleButton">
+        <item name="android:background">@drawable/drawable_button</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:width">70dp</item>
+        <item name="android:height">61dp</item>
+    </style>
+
+    <style name="StyleButtonOperand" parent="StyleButton">
+        <item name="android:textColor">@color/primary</item>
+    </style>
+
+    <style name="StyleButtonColspan" parent="StyleButton">
+        <item name="android:width">148dp</item>
+    </style>
+
+    <style name="StyleButtonRowSpan" parent="StyleButtonOperand">
+        <item name="android:height">134dp</item>
+    </style>
+
+
+</resources>
