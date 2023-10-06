@@ -15,6 +15,28 @@
         android:orientation="vertical">
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputOperation"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:boxBackgroundMode="none">
+
+            <EditText
+                android:id="@+id/editTextOperation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:inputType="none"
+                android:textAlignment="textEnd"
+                android:maxLines="5"
+                android:scrollbars="vertical"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="25sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/input"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -31,7 +53,7 @@
                 android:maxLines="5"
                 android:scrollbars="vertical"
                 android:text="0"
-                android:textSize="35sp" />
+                android:textSize="40sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -71,35 +93,35 @@
                 style="@style/StyleButtonOperand"
                 android:layout_row="0"
                 android:layout_column="0"
-                android:onClick="onOperator2Click"
+                android:onClick="onClickOperatorClean"
                 android:text="←" />
 
             <TextView
                 style="@style/StyleButtonOperand"
                 android:layout_row="0"
                 android:layout_column="1"
-                android:onClick="onOperator2Click"
+                android:onClick="onClickOperatorClean"
                 android:text="CE" />
 
             <TextView
                 style="@style/StyleButtonOperand"
                 android:layout_row="0"
                 android:layout_column="2"
-                android:onClick="onOperator2Click"
+                android:onClick="onClickOperatorClean"
                 android:text="C" />
 
             <TextView
                 style="@style/StyleButtonOperand"
                 android:layout_row="0"
                 android:layout_column="3"
-                android:onClick="onOperatorClick"
+                android:onClick="onClickOperatorOneValue"
                 android:text="±" />
 
             <TextView
                 style="@style/StyleButtonOperand"
                 android:layout_row="0"
                 android:layout_column="4"
-                android:onClick="onOperatorClick"
+                android:onClick="onClickOperatorOneValue"
                 android:text="√" />
 
             <!-- Ligne 2 -->
@@ -128,14 +150,14 @@
                 style="@style/StyleButtonOperand"
                 android:layout_row="1"
                 android:layout_column="3"
-                android:onClick="onOperatorClick"
+                android:onClick="onClickOperatorTwoValue"
                 android:text="÷" />
 
             <TextView
                 style="@style/StyleButtonOperand"
                 android:layout_row="1"
                 android:layout_column="4"
-                android:onClick="onOperatorClick"
+                android:onClick="onClickOperatorOneValue"
                 android:text="%" />
 
             <!-- Ligne 3 -->
@@ -164,14 +186,14 @@
                 style="@style/StyleButtonOperand"
                 android:layout_row="2"
                 android:layout_column="3"
-                android:onClick="onOperatorClick"
+                android:onClick="onClickOperatorTwoValue"
                 android:text="*" />
 
             <TextView
                 style="@style/StyleButtonOperand"
                 android:layout_row="2"
                 android:layout_column="4"
-                android:onClick="onOperatorClick"
+                android:onClick="onClickOperatorOneValue"
                 android:text="1/x" />
 
             <!-- Ligne 4 -->
@@ -200,7 +222,7 @@
                 style="@style/StyleButtonOperand"
                 android:layout_row="3"
                 android:layout_column="3"
-                android:onClick="onOperatorClick"
+                android:onClick="onClickOperatorTwoValue"
                 android:text="-" />
 
             <TextView
@@ -231,7 +253,7 @@
                 style="@style/StyleButtonOperand"
                 android:layout_row="4"
                 android:layout_column="3"
-                android:onClick="onOperatorClick"
+                android:onClick="onClickOperatorTwoValue"
                 android:text="+" />
 
         </GridLayout>
