@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         inputTextView = findViewById(R.id.editText);
+        inputTextView.setShowSoftInputOnFocus(false);
         inputTextViewOperation = findViewById(R.id.editTextOperation);
     }
 

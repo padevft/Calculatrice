@@ -28,6 +28,7 @@
                 android:background="@color/white"
                 android:inputType="none"
                 android:textAlignment="textEnd"
+                android:editable="false"
                 android:maxLines="5"
                 android:scrollbars="vertical"
                 android:text=""
